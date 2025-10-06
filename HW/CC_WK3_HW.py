@@ -94,9 +94,10 @@ try:
 except Exception as e:
     print("Error in Part 3:", e)
 
+    # 💡 Expected output (example):
+    # Addition: 13
+    # Subtraction: 7
+    # Multiplication: 30
+    # Division: 3.3333333333333335
 
 print("Homework done! Fix all 3 parts so there are no errors and the math is correct.")
-
-    # 💡 Expected output (example):
-    # Area: 15
-    # Perimeter: 16
