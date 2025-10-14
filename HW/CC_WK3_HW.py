@@ -14,26 +14,28 @@ Tips:
 """
 
 # ---------------------------
-# Part 1: Syntax Errors
+# Part 1: Syntax Errors (Variables and Numbers Only)
 # ---------------------------
 try:
     print("Part 1: Syntax Errors")
 
-    # ❌ FIX ME: This has missing colons and parentheses
-    x = 5
-    y = 10
+    # ❌ The following lines have syntax mistakes involving variables and numbers.
+    # Fix the errors so the code runs correctly and produces the intended output.
+    # You should not add any new features — just correct the syntax.
 
-    if x < y
-        print("x is smaller than y")
-
-    for i in range(3)
-        print("Number:", i)
+    num1  8
+    num2 = (12
+    result = num1 num2
+    print("Result is:, result
 
     print("Part 1 finished!\n")
 
 except Exception as e:
     print("Error in Part 1:", e)
 
+
+    # 💡 Expected output (example):
+    # Result is: 20
 
 # ---------------------------
 # Part 2: Math Syntax Errors
@@ -61,6 +63,11 @@ try:
 except Exception as e:
     print("Error in Part 2:", e)
 
+    # 💡 Expected output (example):
+    # Total: 13
+    # Product: 30
+    # Quotient: 3.3333333333333335
+    # Difference: 7
 
 # ---------------------------
 # Part 3: Logic Errors
@@ -87,5 +94,10 @@ try:
 except Exception as e:
     print("Error in Part 3:", e)
 
+    # 💡 Expected output (example):
+    # Addition: 13
+    # Subtraction: 7
+    # Multiplication: 30
+    # Division: 3.3333333333333335
 
 print("Homework done! Fix all 3 parts so there are no errors and the math is correct.")
