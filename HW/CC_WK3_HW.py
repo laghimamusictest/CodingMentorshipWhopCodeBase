@@ -23,10 +23,10 @@ try:
     # Fix the errors so the code runs correctly and produces the intended output.
     # You should not add any new features — just correct the syntax.
 
-    num1  8
-    num2 = (12
-    result = num1 num2
-    print("Result is:, result
+    num1 = 8
+    num2 = 12
+    result = num1 + num2
+    print("result is:", result)
 
     print("Part 1 finished!\n")
 
@@ -48,10 +48,10 @@ try:
     a = 10
     b = 3
 
-    total = a +         # ❌ missing number
-    product = a b       # ❌ missing * operator
-    quotient = a /      # ❌ incomplete division
-    result = a = b      # ❌ wrong: this assigns instead of calculating
+    total = a + b        # ❌ missing number
+    product = a * b       # ❌ missing * operator
+    quotient = a / b     # ❌ incomplete division
+    result = a - b      # ❌ wrong: this assigns instead of calculating
 
     print("Total:", total)
     print("Product:", product)
@@ -79,10 +79,10 @@ try:
     a = 10
     b = 3
 
-    addition = a - b        # should be 13
-    subtraction = a + b     # should be 7
-    multiplication = a / b  # should be 30
-    division = a * b        # should be about 3.33
+    addition = a + b        # should be 13
+    subtraction = a - b     # should be 7
+    multiplication = a * b  # should be 30
+    division = a / b        # should be about 3.33
 
 
     print("Addition:", addition)
