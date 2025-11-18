@@ -19,7 +19,7 @@
 # Fix the code so the output is:
 # Output → YouTube
 
-name = YouTube
+name = "YouTube"
 print(name)
 
 
@@ -31,7 +31,7 @@ print(name)
 # Output → YouTube rocks!
 
 platform = "YouTube"
-message = "rocks!"
+message = " rocks!"
 print(platform + message)
 
 
@@ -43,7 +43,7 @@ print(platform + message)
 # Output → Welcome to Python Learners 123
 
 channel = "Python Learners"
-print("Welcome to " + channel + 123)
+print("Welcome to " + channel + str(123))
 
 
 # ----------------------------------------------------------
@@ -54,7 +54,7 @@ print("Welcome to " + channel + 123)
 # Output → g
 
 word = "Learning"
-print(word[8])
+print(word[7])
 
 
 # ----------------------------------------------------------
@@ -65,7 +65,7 @@ print(word[8])
 # Output → Pro
 
 text = "Programming"
-print(text[0:13])
+print(text[0:2])
 
 
 # ----------------------------------------------------------
@@ -75,7 +75,7 @@ print(text[0:13])
 # Fix the typo so the output is:
 # Output → Welcome to python
 
-name = "pyhton"
+name = "python"
 print("Welcome to " + name)
 
 
@@ -89,7 +89,7 @@ print("Welcome to " + name)
 
 title = "music"
 title[0] = "M"
-print(title)
+print(title[0] + title[1:4])
 
 
 # ----------------------------------------------------------
@@ -110,7 +110,7 @@ print(len(word))
 # Output → Rock music
 
 a = "ROCK"
-b = "music"
+b = " music"
 print(a + b)
 
 
@@ -122,3 +122,4 @@ print(a + b)
 
 name = "YouTube"
 print(name[0] + name[1:4] + " " + "rocks")
+YouTu rocks
