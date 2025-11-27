@@ -24,7 +24,7 @@ and make sure the output matches what’s expected.
 #   [10, 20, 30, 40, 50]
 # -----------------------------------------
 
-numbers = [10, 20, , 40, 50]  # BUG: missing one value
+numbers = [10, 20, 30, 40, 50, 99]  # BUG: missing one value
 print(numbers)  # BUG: this line will not run correctly
 
 # -----------------------------------------
@@ -38,19 +38,19 @@ print(numbers)  # BUG: this line will not run correctly
 # -----------------------------------------
 
 print("Second element:", numbers[1])  # OK
-print("Last element:", numbers[6])    # BUG: index out of range
+print("Last element:", numbers[4])    # BUG: index out of range
 
 # -----------------------------------------
 # PROBLEM 3 — Modifying a List
 # Description:
-#   Insert 99 at index 2 and remove 40 from the list.
+#   Insert 40 at index 2 and remove 99 from the list.
 #   One method name is wrong and one argument is incorrect.
 # Expected Output:
 #   [10, 20, 99, 30, 50]
 # -----------------------------------------
 
-numbers.insert(2, 99)
-numbers.remove(400)  # BUG: wrong value to remove
+numbers.insert(2, 40)
+numbers.remove(99)  # BUG: wrong value to remove
 print(numbers)
 
 # -----------------------------------------
@@ -65,7 +65,7 @@ print(numbers)
 fruits = ["apple", "banana"]
 nums = [10, 20, 30]
 
-combined = fruits + nums   # BUG: should form a list of lists, not merge elements
+combined = [fruits,nums]   # BUG: should form a list of lists, not merge elements
 print(combined)
 
 # -----------------------------------------
@@ -78,5 +78,5 @@ print(combined)
 # -----------------------------------------
 
 numbers.append(60)
-numbers.sorted()  # BUG: wrong method name
+numbers.sort()  # BUG: wrong method name
 print(numbers)
