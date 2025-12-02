@@ -11,9 +11,9 @@ Follow the instructions in the comments and test your code.
 # Task: Modify the greet function so that it prints a custom greeting.
 # Change the message inside the function to say: "Welcome, [name]!"
 
-def greet(name):
+def greet(greeting ,name):
     # TODO: Change the line below to print "Welcome, [name]!"
-    print("Hello, " + name + "!")
+    print(greeting + ", " + name + "!")
 
 # Test Part 1
 print("Part 1 Output:")
