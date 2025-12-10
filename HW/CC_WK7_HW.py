@@ -35,7 +35,7 @@ Reason:
 
 # Write your function here:
 def double_number(n):
-    return n * 2
+    pass
 
 
 # ---------------------------------------------------------
@@ -62,12 +62,12 @@ Reason:
 """
 
 # Write your function here:
-def print_fullname(first, last):
-    print(first, last)
+def print_fullname(first, middle,last):
+    print(first, middle, last)
 
 # Example calls:
-print_fullname("Naveen", "Kumar")                 # positional call
-print_fullname(last="Kumar", first="Naveen")      # keyword call
+print_fullname("Naveen","Jean","Kumar")          # positional call
+print_fullname(last="Kumar", first="Naveen", middle="Jean")      # keyword call
 
 
 # ---------------------------------------------------------
@@ -96,11 +96,16 @@ Reason:
 """
 
 def greet(name="Student"):
-    print("Hello", name)
+    #code body
+    return
 
 # Example calls:
 greet()           # uses default
 greet("Naveen")   # custom name
+
+#ex output
+# hello Student
+# hello Naveen
 
 
 # ---------------------------------------------------------
@@ -149,7 +154,7 @@ Reason:
 """
 
 def total_price(price, quantity=1):
-    return price * quantity
+    pass
 
 # Example tests:
 print("Total:", total_price(5, 3))  # 15
@@ -157,36 +162,10 @@ print("Total:", total_price(10))    # 10 (default quantity)
 
 
 # ---------------------------------------------------------
-# PROBLEM 6 — Check if a Word is Long
+# PROBLEM 6 — Add Two Numbers (Error Exploration)
 # ---------------------------------------------------------
 """
-Problem 6 — Check if a Word is Long
-Write a function is_long(word) that returns:
-    True  if the word has more than 5 characters
-    False otherwise
-
-Input:
-    word — string
-Output:
-    Boolean (True/False)
-
-Reason:
-    Practice returning logical values and using string lengths.
-"""
-
-def is_long(word):
-    return len(word) > 5
-
-# Example tests:
-print(is_long("hello"))   # False
-print(is_long("python"))  # True
-
-
-# ---------------------------------------------------------
-# PROBLEM 7 — Add Two Numbers (Error Exploration)
-# ---------------------------------------------------------
-"""
-Problem 7 — Add Two Numbers (Error Exploration)
+Problem 6 — Add Two Numbers (Error Exploration)
 
 Write a function:
     def add(a, b):
