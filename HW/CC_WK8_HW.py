@@ -71,9 +71,9 @@ x = 7
 # but it currently prints the wrong result.
 
 if x % 2 == 0:
-    print("Q3 Output: Odd")
-else:
     print("Q3 Output: Even")
+else:
+    print("Q3 Output: Odd")
 
 # TASK:
 # Fix the logic so the output matches the number.
