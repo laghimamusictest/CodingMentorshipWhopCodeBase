@@ -37,11 +37,12 @@ Input: 0    -> Output: Zero
 """
 
 def check_number(num):
-    if num >= 0:
+    if num > 0:
         print("Positive")
-    else:
+    elif num < 0:
         print("Negative")
-
+    elif num == 0: 
+        print("zero")
 x = int(input("Enter a number: "))
 check_number(x)
 
@@ -69,11 +70,11 @@ Input: 7 and 2  -> Output: First number is larger
 def compare_numbers(a, b):
     if a > b:
         print("First number is larger")
-    else:
+    elif a < b:
         print("Second number is larger")
 
-num1 = input("Enter first number: ")
-num2 = input("Enter second number: ")
+num1 = int(input("Enter first number: "))
+num2 = int(input("Enter second number: "))
 
 compare_numbers(num1, num2)
 
@@ -104,8 +105,8 @@ def even_or_odd(n):
     else:
         print("Odd")
 
-value = input("Enter a number: ")
-even_or_odd   # Function is never executed
+value = int(input("Enter a number: "))
+even_or_odd(value)   # Function is never executed
 
 
 # --------------------------------------------------
@@ -137,7 +138,7 @@ Output list: [3, 2, 3]
 
 def modify_list(lst):
     if lst[0] > 5:
-        lst = [lst[0], 99, lst[2]]  # This breaks the lesson concept
+        lst[1] =99
 
 numbers = [6, 2, 3]
 modify_list(numbers)
@@ -173,9 +174,9 @@ Input: 60 -> Needs Improvement
 def grade(score):
     if score >= 90:
         print("Excellent")
-    if score >= 70:
+    if score >= 70 and score <= 89:
         print("Good")
-    else:
+    elif score <70:
         print("Needs Improvement")
 
 marks = int(input("Enter score: "))
@@ -212,4 +213,4 @@ def check_letter(ch):
         print("Consonant")
 
 letter = input("Enter a letter: ")
-check_letter(letter)
+check_letter(letter[0])
