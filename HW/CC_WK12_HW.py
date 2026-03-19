@@ -50,7 +50,7 @@ student = {
     "year": "Sophomore"
 }
 
-print(student["department"])
+print(student["major"])
 
 
 
@@ -80,8 +80,8 @@ product = {
     "price": 25
 }
 
-def print_price(item):
-    print("The price is", product_info["price"])
+def print_price (item):
+    print("The price is", product["price"])
 
 print_price(product)
 
@@ -116,7 +116,7 @@ user = {
     "role": "admin"
 }
 
-if user["permission"] == "admin":
+if user["role"] == "admin":
     print("Full access granted")
 else:
     print("Limited access")
@@ -141,16 +141,16 @@ else:
 # 150
 # ---------------------------------------------------------
 
-inventory = {
+product = {
     "item": "USB Cable",
     "price": 10,
     "stock": 150
 }
 
 def get_stock(product):
-    return product["price"]
+    return product["stock"]
 
-print(get_stock(inventory))
+print(get_stock(product))
 
 
 
@@ -162,12 +162,12 @@ print(get_stock(inventory))
 #
 # PROBLEM DESCRIPTION
 # The dictionary below contains several programming languages.
-# The keys represent the language name.
+# The keys represent the year the language was made.
 #
-# The program asks the user to type the name of a language.
+# The program asks the user to type the year a language was made.
 #
 # If the language exists in the dictionary,
-# the program should print the year it was created.
+# the program should print the name of the language corresponding to the year it was made.
 #
 # If the language is NOT in the dictionary,
 # the program should print:
@@ -181,23 +181,24 @@ print(get_stock(inventory))
 # whether the user input exists in the dictionary.
 #
 # EXAMPLE INPUT
-# Python
+# 1991
 #
 # EXPECTED OUTPUT
-# Python was created in 1991
+# Python
+
 # ---------------------------------------------------------
 
 languages = {
-    "Python": 1991,
-    "Java": 1995,
-    "JavaScript": 1995
+    "1991": "Python",
+    "1995": "Java",
+    "1996": "JavaScript"
 }
 
 def find_language():
-    name = input("Enter a programming language: ")
+    year = input("Enter a year a programming language was made: ")
 
-    if name == languages:
-        print(name, "was created in", languages[name])
+    if "Python" == languages[year]:
+        print(languages[year])
     else:
         print("Language not found.")
 
