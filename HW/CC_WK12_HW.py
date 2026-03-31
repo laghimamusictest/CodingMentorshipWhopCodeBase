@@ -50,7 +50,7 @@ student = {
     "year": "Sophomore"
 }
 
-print(student["department"])
+print(student["major"])
 
 
 
@@ -81,7 +81,7 @@ product = {
 }
 
 def print_price(item):
-    print("The price is", product_info["price"])
+    print("The price is", product["price"])
 
 print_price(product)
 

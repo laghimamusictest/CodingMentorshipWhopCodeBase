@@ -55,7 +55,7 @@ from array import array
 
 fruits = ["apple", "banana", "orange"]
 
-print(fruits[0])
+print(fruits[2])
 
 
 
@@ -83,9 +83,9 @@ print(fruits[0])
 # ---------------------------------------------------------
 
 data = ["Alex", 25, 3.5, True]
-
+#def function_name(input, input2)
 def print_list(items):
-    for value in values:
+    for value in items:
         print(value)
 
 print_list(data)
