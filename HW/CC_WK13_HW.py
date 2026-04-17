@@ -55,7 +55,7 @@ from array import array
 
 fruits = ["apple", "banana", "orange"]
 
-print(fruits[0])
+print(fruits[1])
 
 
 
@@ -83,9 +83,9 @@ print(fruits[0])
 # ---------------------------------------------------------
 
 data = ["Alex", 25, 3.5, True]
-
+#def function_name(input, input2)
 def print_list(items):
-    for value in values:
+    for value in items:
         print(value)
 
 print_list(data)
@@ -114,7 +114,7 @@ print_list(data)
 
 numbers = [10, 20, 30]
 
-number_list.append(40)
+numbers.append(40)
 
 print(numbers)
 
@@ -139,7 +139,7 @@ print(numbers)
 # array('i', [1, 2, 3, 4])
 # ---------------------------------------------------------
 
-numbers = array('i', [1, 2, "three", 4])
+numbers = array('i', [1, 2, 3, 4])
 
 print(numbers)
 
@@ -166,7 +166,7 @@ print(numbers)
 
 numbers = array('i', [10, 20, 30, 40])
 
-print(numbers[1])
+print(numbers[2])
 
 
 
@@ -233,7 +233,7 @@ identify_structure(example_array)
 # ['Alex', 30, True]
 # ---------------------------------------------------------
 
-person_data = array('i', ["Alex", 30, True])
+person_data = ["Alex", 30, True]
 
 print(person_data)
 

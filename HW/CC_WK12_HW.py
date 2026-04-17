@@ -80,7 +80,11 @@ product = {
     "price": 25
 }
 
+<<<<<<< HEAD
 def print_price (item):
+=======
+def print_price(item):
+>>>>>>> a7d5b66fd81ded768ec7f66d6ed3883eb5d5c1f8
     print("The price is", product["price"])
 
 print_price(product)
