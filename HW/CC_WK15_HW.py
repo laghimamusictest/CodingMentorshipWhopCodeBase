@@ -30,11 +30,18 @@ project/
 🔢 PART 1: math_utils.py
 
 Create these functions:
-
+from mylib.math_utils.py import add, multiply, square
 - add(a, b)
 - multiply(a, b)
 - square(n)
+x=add(1,5)
+print(x)
 
+y=multiply(1,5)
+print(y)
+
+z=square(4)
+print(z)
 💡 HINTS:
 - Use return (not print)
 - square(n) = n * n
@@ -59,16 +66,36 @@ Create these functions:
 Make it possible to do:
 
 from mylib import add
+from mylib.math_utils import square
 
 💡 HINT:
 - Use: from .file import function
 
 --------------------------------------------------------
-🚀 PART 4: main.py
+🚀 PART 4: math_utils.py + string_utils.py
 
 - Import your functions
 - Call each function
 - Print results
+
+import mylib.math_utils as math
+import mylib.string_utils as string
+
+x = math.add(2, 4)
+print(x)
+x = math.square(2)
+print(x)
+x = math.multiply(3, 4)
+print(x)
+
+x = string.to_upper("hello")
+print(x)
+
+x = string.reverse("hello")
+print(x)
+
+x = string.add_exclamation("hello")
+print(x)
 
 Use these inputs:
 - Numbers: 2, 3, 4

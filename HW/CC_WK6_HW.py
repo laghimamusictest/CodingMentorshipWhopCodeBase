@@ -13,7 +13,7 @@ Follow the instructions in the comments and test your code.
 
 def greet(greeting="greeting" ,name):
     # TODO: Change the line below to print "Welcome, [name]!"
-    print(greeting + ", " + name + "!")
+    print(Welcome + ", " + name + "!")
 
 # Test Part 1
 print("Part 1 Output:")
@@ -30,6 +30,7 @@ print()  # blank line for readability
 def double_number(num):
     # TODO: Return num multiplied by 2
     pass
+    num * 2
 
 # Test Part 2
 print("Part 2 Output:")
@@ -45,7 +46,7 @@ print()
 
 def add_numbers(a, b):
     # TODO: Return the sum of a and b
-    pass
+    return a + b
 
 # Test Part 3
 print("Part 3 Output:")
@@ -71,7 +72,10 @@ print()
 def check_even(num):
     # TODO: Use the modulo operator to check if num is even or odd
     pass
-
+    if num % 2 == 0: # that means that num is even
+        return "Even"
+    Elif num % 2 == 1: # that means that num is odd
+        return "Odd"
 # Test Part 4
 print("Part 4 Output:")
 print(check_even(4))  # Expected: Even
@@ -87,6 +91,7 @@ print()
 
 def full_name(first_name, last_name):
     # TODO: Return the combined full name
+    return first_name + "" + last_name
     pass
 
 # Test Part 5
@@ -104,8 +109,7 @@ print()
 
 def greet_person(name):
     # TODO: Return the greeting string
-    pass
-
+    return "Hi, + "" + name + "!" + "" + "Welcome!"
 # Test Part 6
 print("Part 6 Output:")
 print(greet_person("Kevin"))  # Expected: Hi, Kevin! Welcome!
@@ -121,7 +125,7 @@ print()
 
 def multiply_and_add(a, b, c):
     # TODO: Return (a * b) + c
-    pass
+    Return (a * b) + c
 
 # Test Part 7
 print("Part 7 Output:")
